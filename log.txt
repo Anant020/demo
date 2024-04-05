@@ -1,0 +1,18 @@
+// express installed. by npm i express
+// npm init
+// add start script in package,.json - start : node index.js
+
+GET /users - all
+GET /users/1 - with id 1
+GET /users/2 - with id 2
+POST /users - GNERATE 
+PATCH /users/1 - EDIT users with id 
+DELETE /users/1 - DELETE THE USER WITH ID 1
+
+
+change the type to module.
+used the atlas url, typed the password and the mongodata text in the url
+
+used axios for sending http request. installed axios npm i axios react-icons idk why this but ok
+https://www.youtube.com/watch?v=-42K44A1oMA&t=860s
+installing cors and handling cors
