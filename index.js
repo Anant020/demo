@@ -4,7 +4,7 @@ import { Data } from './models/mongoapp.js';
 import userRoute from './Routes/Route.js';
 import cors from 'cors';
 const app = express();
-const PORT = 8000;
+const PORT = 'https://mongo-backend-dmzi.onrender.com/';
 import { PORTmongo, mongodbURL } from './config.js';
 //Routes
 app.use(express.json());
