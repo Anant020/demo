@@ -4,7 +4,7 @@ import { Data } from './models/mongoapp.js';
 import userRoute from './Routes/Route.js';
 import cors from 'cors';
 const app = express();
-// const PORT = 8000;
+const PORT = 8000;
 import { PORTmongo, mongodbURL } from './config.js';
 //Routes
 app.use(express.json());
@@ -19,7 +19,7 @@ app.use('/users', userRoute);
 mongoose.connect(mongodbURL)
     .then(() => {
         console.log("App connected with mongodbAtlas");
-        // app.listen(PORT, () => console.log(`Server Started at port ${PORT}`))
+        app.listen(PORT, () => console.log(`Server Started at port ${PORT}`));
 
     })
     .catch((error) => { console.log(error); });
